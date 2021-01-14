@@ -23,8 +23,10 @@ export default {
      }
   },
   methods:{
-    change(){
-      console.log('input',this.value)
+    change(val){
+      console.log('input',val)
+      this.value = val;
+      console.log('this.value',this.value)
     }
   }
 }
